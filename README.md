@@ -1,7 +1,7 @@
-Walt O'Connor
-Type Checker/Compiler
+# Walt O'Connor
+## Type Checker/Compiler
 
-TO BUILD:
+## TO BUILD:
 Run make in the root directory, compiles with no warning under g++ 7.4.0 under Ubuntu 18.04
 There is likely a linker error with Mac, I do not have a Mac so I can't do a lot about this.
 I think someone has a solution on Piazza
