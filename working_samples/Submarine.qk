@@ -1,0 +1,27 @@
+class Submarine() {
+    
+}
+
+class AtomicSubmarine() extends Submarine{
+    def STRING() : String {
+        return "Atomic";
+    }
+}
+
+class YellowSubmarine() extends Submarine{
+    def STRING() : String {
+        return "Yellow";
+    }
+}
+
+sub = Submarine();
+x = 10;
+y = 7;
+if x < 5 and y < 7  {
+    sub = AtomicSubmarine();
+}
+else{
+    sub = YellowSubmarine();
+}
+
+sub.PRINT();

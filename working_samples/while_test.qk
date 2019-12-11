@@ -1,0 +1,14 @@
+
+//test of while statement
+x = 0;
+while(x < 5){
+    x.PRINT();
+    "\n".PRINT();
+    x = x+1;
+    "new_x=".PRINT();
+    x.PRINT();
+
+    "\n========\n".PRINT();
+}
+
+"end\n".PRINT();
