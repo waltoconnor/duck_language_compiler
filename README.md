@@ -1,5 +1,12 @@
 # Walt O'Connor
 ## Type Checker/Compiler
+Takes .qk files, lexes them, parses them, typechecks them, and generates very primitive C code emulating register level implementations of them (this was a compromise to make the class doable in 3 months).
+
+## Notes:
+The parser and lexer in `./src/` are provided known good implementations, my implementations are found in the `./parser` and `./lexer` directories.
+The files in `./src/` were provided as stubs, most of the code I wrote can be found in `./src/ASTNode.h` for the type system, and `./src/ir_gen.cxx` for the code generator.
+
+Code examples can be found in the `./samples/` folder, and example output can be found in the `./ir_out` folder.
 
 ## TO BUILD:
 Run make in the root directory, compiles with no warning under g++ 7.4.0 under Ubuntu 18.04
@@ -60,7 +67,6 @@ use `gcc [FILENAME ].qk.c Builtins.o -o [FILENAME ]`
 - Dot works.
 - Dispatch tables work correctly (see Submarine.qk)
 - Register like allocation is done correctly (no expressions inlined anywhere).
-- Not not implemented
 - Complex inheritance works correctly (see GoodWalk)
 
 # Final Comments
