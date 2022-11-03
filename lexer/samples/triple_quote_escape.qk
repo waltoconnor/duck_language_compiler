@@ -1,0 +1,2 @@
+x = """\q\nx\n""";
+y = "hi this is a test string";
